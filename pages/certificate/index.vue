@@ -5,7 +5,7 @@ import { useCertificateStore } from '~/store/certificate'
 
 const store = useCertificateStore()
 
-const baseApiFile = ref('http://localhost:8000/storage/')
+const baseApiFile = ref(process.env.API_ASSET_URL)
 onMounted(() => {
     store.getData()
 })

@@ -6,7 +6,7 @@ import { useAwardsStore } from '~/store/awards'
 
 const store = useAwardsStore()
 
-const baseApiFile = ref('http://localhost:8000/storage/')
+const baseApiFile = ref(process.env.API_ASSET_URL)
 onMounted(() => {
     store.getData()
 })

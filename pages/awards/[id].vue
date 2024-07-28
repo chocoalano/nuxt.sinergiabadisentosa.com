@@ -9,7 +9,7 @@ const store = useAwardsStore()
 const slug = ref(null);
 
 const { detail, loading } = storeToRefs(store)
-const baseApiFile = ref('http://localhost:8000/storage/')
+const baseApiFile = ref(process.env.API_ASSET_URL)
 onMounted(() => {
     slug.value = `${route.params.id}`
     store.getDataFromSlug(slug.value)

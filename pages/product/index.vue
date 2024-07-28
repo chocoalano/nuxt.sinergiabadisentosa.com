@@ -49,7 +49,7 @@ const store = useProductStore()
 const coverImg = ref(null);
 const introduction = ref('');
 
-const baseApiFile = ref('http://localhost:8000/storage/')
+const baseApiFile = ref(process.env.API_ASSET_URL)
 onMounted(() => {
     store.getData()
     coverImg.value = 'https://aobi.co.id/images/product.jpg'
