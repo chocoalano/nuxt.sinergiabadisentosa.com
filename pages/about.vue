@@ -24,7 +24,7 @@ import { useAboutStore } from '~/store/about'
 
 const store = useAboutStore()
 
-const baseApiFile = ref(process.env.API_ASSET_URL)
+const baseApiFile = ref('https://erp.sinergiabadisentosa.com/storage/')
 onMounted(() => {
     store.getIntroduction()
 })

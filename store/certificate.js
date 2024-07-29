@@ -28,7 +28,7 @@ export const useCertificateStore = defineStore('certificate', {
         this.coverImg = x.seo.meta_image
         this.data = x.list.data
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }
@@ -49,7 +49,7 @@ export const useCertificateStore = defineStore('certificate', {
           item:x.item,
         }
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }

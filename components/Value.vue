@@ -32,7 +32,7 @@ import { useValueStore } from '~/store/value'
 
 const store = useValueStore()
 
-const baseApiFile = ref(process.env.API_ASSET_URL)
+const baseApiFile = ref('https://erp.sinergiabadisentosa.com/storage/')
 onMounted(() => {
     store.getData()
 })

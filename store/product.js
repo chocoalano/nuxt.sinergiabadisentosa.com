@@ -30,7 +30,7 @@ export const useProductStore = defineStore('product', {
         meta.setMetaSeo(x.seo.meta_keywords, x.seo.meta_descriptions, x.seo.meta_title)
         this.data = x.list
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }
@@ -56,7 +56,7 @@ export const useProductStore = defineStore('product', {
           child: x.child
         }
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }

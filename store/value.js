@@ -14,7 +14,7 @@ export const useValueStore = defineStore('value', {
         const response = await $axios.get('/compro/values')
         this.data = response.data.data
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }

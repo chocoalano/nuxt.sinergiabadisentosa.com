@@ -16,7 +16,7 @@ export const useHomepageStore = defineStore('homepage', {
         const x = response.data.data
         meta.setMetaSeo(x.meta_keywords, x.meta_descriptions, x.meta_title)
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }

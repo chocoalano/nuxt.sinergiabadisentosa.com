@@ -22,7 +22,7 @@ export const useAboutStore = defineStore('about', {
         const response = await $axios.get('/compro/about-us')
         this.data = response.data.data
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }
@@ -44,7 +44,7 @@ export const useAboutStore = defineStore('about', {
           title:x.list.title,
         }
       } catch (error) {
-        alert(error.message)
+        console.log(error);
       } finally {
         this.loading = false
       }

@@ -9,7 +9,7 @@ const store = useProductStore()
 const slug = ref(null);
 
 const { detail, loading } = storeToRefs(store)
-const baseApiFile = ref(process.env.API_ASSET_URL)
+const baseApiFile = ref('https://erp.sinergiabadisentosa.com/storage/')
 onMounted(() => {
     slug.value = `${route.params.id}`
     store.getDataSlug(slug.value)

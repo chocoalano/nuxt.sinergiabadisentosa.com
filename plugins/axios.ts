@@ -3,7 +3,7 @@ import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const instance = axios.create({
-    baseURL: process.env.API_URL,
+    baseURL: 'https://erp.sinergiabadisentosa.com/api',
   })
 
   nuxtApp.provide('axios', instance)

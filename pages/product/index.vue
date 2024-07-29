@@ -49,7 +49,7 @@ const store = useProductStore()
 const coverImg = ref(null);
 const introduction = ref('');
 
-const baseApiFile = ref(process.env.API_ASSET_URL)
+const baseApiFile = ref('https://erp.sinergiabadisentosa.com/storage/')
 onMounted(() => {
     store.getData()
     coverImg.value = 'https://aobi.co.id/images/product.jpg'

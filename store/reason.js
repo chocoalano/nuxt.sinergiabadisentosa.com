@@ -27,7 +27,7 @@ export const useReasonStore = defineStore('reason', {
           active:fetch.active,
         }
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }

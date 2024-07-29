@@ -17,7 +17,7 @@ export const useArticleStore = defineStore('article', {
         this.data = response.data.data.data
         this.length = response.data.data.last_page
       } catch (error) {
-        alert(error.message)
+        console.log(error);
       } finally {
         this.loading = false
       }

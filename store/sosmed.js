@@ -16,7 +16,7 @@ export const useSosmedStore = defineStore('sosmed', {
         const response = await $axios.get('/compro/sosmed')
         this.data = response.data.data
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }
@@ -30,7 +30,7 @@ export const useSosmedStore = defineStore('sosmed', {
         const filteredData = response.data.data.filter(item => item.hp.startsWith('+62'));
         this.wa = filteredData[0].hp
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }

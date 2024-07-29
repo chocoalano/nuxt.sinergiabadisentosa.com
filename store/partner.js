@@ -24,7 +24,7 @@ export const usePartnerStore = defineStore('partner', {
           video:x.list.video
         }
       } catch (error) {
-        alert(error.message)
+        console.log(error.message);
       } finally {
         this.loading = false
       }

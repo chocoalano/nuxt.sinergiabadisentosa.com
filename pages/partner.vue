@@ -23,7 +23,7 @@ import { usePartnerStore } from '~/store/partner'
 
 const store = usePartnerStore()
 
-const baseApiFile = ref(process.env.API_ASSET_URL)
+const baseApiFile = ref('https://erp.sinergiabadisentosa.com/storage/')
 onMounted(() => {
     store.getData()
 })

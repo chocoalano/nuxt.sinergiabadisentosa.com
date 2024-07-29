@@ -15,7 +15,7 @@ import { useCarouselStore } from '~/store/carousel'
 
 const store = useCarouselStore()
 
-const baseApiFile = ref(process.env.API_ASSET_URL)
+const baseApiFile = ref('https://erp.sinergiabadisentosa.com/storage/')
 onMounted(() => {
     store.getData()
 })
